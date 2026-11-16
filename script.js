@@ -107,7 +107,7 @@
         d.classList.add('mt--c', 'mt--' + cell.t);
         if (cell.t === 'h') d.innerHTML = '<h2>Работы на объектах</h2>';
         if (cell.t === 'f') d.innerHTML = `<b>${cell.b}</b><p>${cell.p}</p>`;
-        if (cell.t === 'a') { d.href = 'https://t.me/pchela3636'; d.target = '_blank'; d.rel = 'noopener'; d.innerHTML = cfg.cols === 3 ? '<span>Написать в Telegram</span>' : '<span>Написать Денису в Telegram</span>'; }
+        if (cell.t === 'a') { d.href = 'tel:+79673589493'; d.innerHTML = '<span>Позвонить: +7 967 358-94-93</span>'; }
       }
       board.appendChild(d);
     }
