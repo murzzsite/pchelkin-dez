@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /project/
+
+Sitemap: https://pcheladez.ru/sitemap.xml

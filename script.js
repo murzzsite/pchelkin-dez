@@ -409,7 +409,10 @@
       const f = form.elements[k]; const ok = (payload[k] || '').trim().length >= (k === 'name' ? 2 : 5);
       f.classList.toggle('bad', !ok); if (!ok) bad = true;
     });
+    const cb = form.elements.consent; const cbOk = !!(cb && cb.checked);
+    cb?.closest('.consent')?.classList.toggle('bad', !cbOk); if (!cbOk) bad = true;
     if (bad) return;
+    delete payload.consent;
     payload.comment = `Что беспокоит: ${payload.problem}` + (payload.calc ? `; ${payload.calc}` : '');
     delete payload.calc;
     payload.source = 'pchelkin-dez';
@@ -422,4 +425,12 @@
     } catch (err) { console.error(err); btn.textContent = 'Ошибка, попробуйте ещё раз'; }
     finally { setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3500); }
   });
+
+  /* ---------- cookie notice ---------- */
+  const ck = $('#cookie');
+  if (ck) {
+    let seen = false; try { seen = localStorage.getItem('cookie-ok') === '1'; } catch (e) {}
+    if (!seen) ck.hidden = false;
+    $('#cookie-ok')?.addEventListener('click', () => { ck.hidden = true; try { localStorage.setItem('cookie-ok', '1'); } catch (e) {} });
+  }
 })();

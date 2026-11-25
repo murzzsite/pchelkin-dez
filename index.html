@@ -9,8 +9,43 @@
 <meta property="og:title" content="Денис Пасечник — дезинфектор в Санкт-Петербурге">
 <meta property="og:description" content="Клопы, тараканы, грызуны, плесень, запахи. Осматриваю, объясняю, обрабатываю. По договору.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/hero-main.jpg">
+<meta property="og:image" content="https://pcheladez.ru/img/hero-main.jpg">
+<meta property="og:url" content="https://pcheladez.ru/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Денис Пасечник — дезинфектор">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://pcheladez.ru/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b2622'/%3E%3Ccircle cx='14' cy='14' r='7' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Cpath d='M19.5 19.5l7 7' stroke='%23fff' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='14' cy='14' r='2.6' fill='%2330c27a'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://pcheladez.ru/#business",
+  "name": "Денис Пасечник — дезинфектор",
+  "description": "Уничтожение клопов, тараканов, грызунов и плесени, удаление запахов, обработка участков и уборка после происшествий в Санкт-Петербурге и Ленинградской области. Работа по договору.",
+  "url": "https://pcheladez.ru/",
+  "image": "https://pcheladez.ru/img/hero-main.jpg",
+  "telephone": "+7 967 358-94-93",
+  "address": {"@type": "PostalAddress", "addressLocality": "Санкт-Петербург", "addressCountry": "RU"},
+  "areaServed": [{"@type": "City", "name": "Санкт-Петербург"}, {"@type": "AdministrativeArea", "name": "Ленинградская область"}],
+  "founder": {"@type": "Person", "name": "Денис Пасечник"},
+  "paymentAccepted": "Наличные, безналичный расчёт",
+  "sameAs": ["https://t.me/pchela3636", "https://vk.ru/pchelkin36", "https://instagram.com/pasechnikd36", "https://profi.ru/profile/PasechnikDA5", "https://uslugi.yandex.ru/profile/DenisPasechnik-2666464"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Услуги",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Уничтожение клопов и тараканов", "serviceType": "Дезинсекция"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 3500, "maxPrice": 13000, "priceCurrency": "RUB"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Удаление плесени", "serviceType": "Удаление плесени"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 800, "maxPrice": 1200, "priceCurrency": "RUB", "unitText": "м²"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Дератизация: крысы и мыши", "serviceType": "Дератизация"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 4000, "priceCurrency": "RUB"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Обработка помещения от запахов", "serviceType": "Удаление запахов"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 5000, "priceCurrency": "RUB"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Обработка участков: клещи, комары, муравьи, осы, борщевик", "serviceType": "Обработка участков"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 4000, "priceCurrency": "RUB"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Уборка после пожара, потопа и других происшествий", "serviceType": "Уборка после ЧП"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 10000, "priceCurrency": "RUB"}}
+    ]
+  }
+}
+</script>
 <script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,8 +261,8 @@
           <option>Другое</option>
         </select>
       </label>
+      <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>Согласен на обработку персональных данных и с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a></span></label>
       <button class="btn btn--ink" type="submit">Отправить заявку</button>
-      <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">обработкой данных</a>.</p>
     </form>
   </div>
   <div class="t t--deep cta__tile" aria-hidden="true"></div>
@@ -271,5 +306,9 @@
 </div>
 
 <script src="script.js"></script>
+<div class="cookie" id="cookie" role="region" aria-label="Файлы cookie" hidden>
+  <p>Сайт использует технические файлы cookie и может использовать сервисы статистики. Подробнее в <a href="privacy.html">политике конфиденциальности</a>.</p>
+  <button class="btn btn--ink btn--sm" type="button" id="cookie-ok">Понятно</button>
+</div>
 </body>
 </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+<title>Проект pcheladez.ru: статус работ</title>
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ebe5e3;--surface:#e1dad7;--paper:#f5f1ef;--ink:#2b2622;--muted:#5d544f;--accent:#0f7d45;--r:8px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 Onest,system-ui,sans-serif;padding:10px;overflow-x:hidden}
+main{max-width:1080px;margin:0 auto;display:grid;gap:10px}
+section,header{background:var(--paper);border-radius:var(--r);padding:clamp(18px,3vw,36px)}
+header{background:var(--ink);color:#f5f1ef}
+h1{font-weight:300;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em;line-height:1.05;margin:0 0 10px}
+h2{font-weight:300;font-size:clamp(1.6rem,3.2vw,2.4rem);letter-spacing:-.02em;line-height:1.1;margin:0 0 8px}
+h3{font-weight:500;font-size:1rem;margin:0 0 8px}
+p{margin:0 0 12px}
+.lead{color:var(--muted)}
+header .lead{color:#cfc8c4}
+a{color:var(--accent)}
+header a{color:#7be0ac}
+ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+li{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border-radius:var(--r);padding:12px 14px}
+.st{flex:none;font-size:.8125rem;font-weight:500;padding:3px 10px;border-radius:99px;background:var(--accent);color:#fff;white-space:nowrap}
+.st.w{background:var(--ink)}
+.st.n{background:#8f5a07}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:10px}
+.rep,.blk{background:var(--bg);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.rep p,.blk pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:.9375rem;flex:1}
+.cp{align-self:flex-start;min-height:44px;padding:0 18px;border:0;border-radius:var(--r);background:var(--ink);color:#fff;font:500 .9375rem Onest,system-ui,sans-serif;cursor:pointer}
+.cp:hover{background:#000}
+.cp.ok{background:var(--accent)}
+.sub{margin:22px 0 10px;font-size:1.1rem;font-weight:500}
+.poster{width:min(100%,420px);aspect-ratio:210/297;margin:0 auto;background:#fff;border:1px solid #d3cac6;border-radius:var(--r);padding:clamp(20px,6vw,36px);display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center}
+.poster h3{font-weight:300;font-size:clamp(1.8rem,8vw,2.6rem);letter-spacing:-.02em;line-height:1.05;margin:0}
+.poster .qr{width:62%;aspect-ratio:1;border:3px dashed var(--ink);border-radius:var(--r);display:grid;place-items:center;font-size:.9375rem;color:var(--muted);padding:12px}
+.poster p{margin:0;font-size:.9375rem}
+.poster b{font-weight:500}
+.poster .acc{width:56px;height:6px;background:var(--accent);border-radius:3px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.print{margin-top:12px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+@media print{body{padding:0;background:#fff}main>*:not(#poster){display:none}#poster{padding:0}#poster .noprint{display:none}.poster{border:0;width:100%}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Проект pcheladez.ru</h1>
+<p class="lead">Страница для Дениса: статус работ, готовые ответы на отзывы, макет плаката и тексты для карточек на картах. Страница закрыта от поисковиков.</p>
+<p class="lead">Сайт: <a href="../">pcheladez.ru</a></p>
+</header>
+
+<section aria-labelledby="s1">
+<h2 id="s1">Статус работ</h2>
+<ul>
+<li><span class="st">Готово</span><span>Адрес сайта для поисковиков указан: pcheladez.ru, главная страница отмечена как основная (canonical), добавлено описание для ссылок в мессенджерах и соцсетях.</span></li>
+<li><span class="st">Готово</span><span>Разметка для поисковиков: название, телефон, город, зона выезда и перечень услуг с ценами «от» из сайта.</span></li>
+<li><span class="st">Готово</span><span>Файлы robots.txt и sitemap.xml с новым доменом. Эта страница в поиск не попадает.</span></li>
+<li><span class="st">Готово</span><span>Форма заявки: отметка согласия на обработку данных, плашка про cookie, обновлённая политика конфиденциальности.</span></li>
+<li><span class="st">Готово</span><span>10 ответов на отзывы, макет плаката «Оставьте отзыв», тексты для карточек на картах (ниже).</span></li>
+<li><span class="st n">Нужно от вас</span><span>Для политики конфиденциальности: ФИО или ИП и ИНН оператора. Сейчас в политике стоит пометка «[заполнить: ФИО/ИП, ИНН]».</span></li>
+<li><span class="st n">Нужно от вас</span><span>Ссылка на страницу отзыва (карточка на Яндекс Картах, 2ГИС или Google), чтобы поставить QR-код на плакат.</span></li>
+<li><span class="st n">Нужно от вас</span><span>Для карточек на картах: график работы.</span></li>
+<li><span class="st w">Дальше</span><span>Счётчик Яндекс Метрики на сайте не установлен. Если он нужен, пришлите номер счётчика, подключим и отразим в политике.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="s2">
+<h2 id="s2">Ответы на отзывы</h2>
+<p class="lead">Нажмите «Скопировать» и вставьте текст в ответ на отзыв. В текстах нет деталей о методах и составе средств: добавляйте от себя только то, что есть в вашем договоре.</p>
+<p class="sub">Хорошие отзывы</p>
+<div class="grid"><article class="rep"><h3>Хороший отзыв: клопы, документы, гарантия</h3><p id="r1">Здравствуйте! Спасибо за отзыв. Рад, что при осмотре удалось всё спокойно объяснить и что вы остались довольны результатом. Если появятся вопросы после обработки, пишите, всегда на связи.</p><button class="cp" type="button" data-t="r1">Скопировать</button></article><article class="rep"><h3>Хороший отзыв: осмотр, клопов не нашли</h3><p id="r2">Здравствуйте! Спасибо за отзыв. Для меня важно, чтобы человек платил только за то, что действительно нужно: если при осмотре обработка не требуется, так и скажу. Рад, что вы это оценили. Если что-то заметите снова, обращайтесь.</p><button class="cp" type="button" data-t="r2">Скопировать</button></article><article class="rep"><h3>Хороший отзыв: плесень</h3><p id="r3">Здравствуйте! Благодарю за тёплые слова. Рад, что стены остались в хорошем состоянии. Чтобы плесень не вернулась, придерживайтесь рекомендаций, которые я давал после работы. Если появятся вопросы, напишите.</p><button class="cp" type="button" data-t="r3">Скопировать</button></article><article class="rep"><h3>Хороший отзыв: быстро и аккуратно</h3><p id="r4">Здравствуйте! Спасибо, что нашли время написать отзыв. Приятно, что работа прошла быстро и вы довольны результатом. Буду рад помочь снова, если потребуется.</p><button class="cp" type="button" data-t="r4">Скопировать</button></article><article class="rep"><h3>Хороший отзыв: прошло время, всё чисто</h3><p id="r5">Здравствуйте! Спасибо, что вернулись с отзывом спустя время: именно по прошествии времени видно результат. Рад, что всё хорошо. Если что-то изменится, обращайтесь.</p><button class="cp" type="button" data-t="r5">Скопировать</button></article></div>
+<p class="sub">Спорные и плохие отзывы</p>
+<div class="grid"><article class="rep"><h3>Спорный отзыв: результат не устроил</h3><p id="r6">Здравствуйте! Спасибо, что написали. Мне жаль, что результат не оправдал ожиданий. Хочу разобраться в ситуации: напишите мне в Telegram @pchela3636 или позвоните +7 967 358-94-93, согласуем осмотр и посмотрим, что происходит на объекте. Условия по повторной работе зависят от договора, обсудим их при разговоре.</p><button class="cp" type="button" data-t="r6">Скопировать</button></article><article class="rep"><h3>Спорный отзыв: дорого</h3><p id="r7">Здравствуйте! Спасибо за обратную связь. Стоимость я называю по итогам осмотра и заранее объясняю, из чего она складывается. Если хотите, напишите мне, и я разберу вашу смету по пунктам. Для пенсионеров, инвалидов и многодетных семей действует скидка 15%.</p><button class="cp" type="button" data-t="r7">Скопировать</button></article><article class="rep"><h3>Спорный отзыв: задержка или неудобное время</h3><p id="r8">Здравствуйте! Спасибо, что написали. Приношу извинения, если время ожидания доставило неудобства. Я учту ваше замечание. Если вам удобно, напишите мне в Telegram @pchela3636: хочу выяснить детали и постараться исправить впечатление.</p><button class="cp" type="button" data-t="r8">Скопировать</button></article><article class="rep"><h3>Спорный отзыв: запах после обработки</h3><p id="r9">Здравствуйте! Спасибо за отзыв. Мне жаль, что вас беспокоит запах. Напишите, пожалуйста, мне в Telegram @pchela3636 или позвоните +7 967 358-94-93: расскажите, что именно вы заметили, и подскажу, что можно сделать.</p><button class="cp" type="button" data-t="r9">Скопировать</button></article><article class="rep"><h3>Спорный отзыв: потребовалась вторая обработка</h3><p id="r10">Здравствуйте! Спасибо за отзыв. Сложные случаи иногда требуют повторной обработки, и я предупреждаю об этом при осмотре. Если ожидания по срокам у нас разошлись, мне жаль, давайте поговорим: напишите в Telegram @pchela3636, разберёмся вместе.</p><button class="cp" type="button" data-t="r10">Скопировать</button></article></div>
+</section>
+
+<section aria-labelledby="s3" id="poster">
+<h2 id="s3" class="noprint">Плакат «Оставьте отзыв»</h2>
+<div class="two">
+<div class="poster" role="img" aria-label="Макет плаката: Оставьте отзыв, на месте QR-кода заглушка">
+<div class="acc"></div>
+<h3>Оставьте отзыв</h3>
+<div class="qr">Здесь будет QR-код</div>
+<p>Наведите камеру телефона на код. Это займёт минуту.</p>
+<p><b>Денис Пасечник</b><br>Дезинфектор, Санкт-Петербург<br>+7 967 358-94-93</p>
+</div>
+<div class="noprint">
+<p>Макет формата A4: заглушка пунктиром заменяется QR-кодом, когда будет ссылка на страницу отзыва. Плакат можно положить в договор или отдать клиенту после работы.</p>
+<p class="lead">Кнопка ниже печатает только плакат.</p>
+<button class="cp print" type="button" id="pr">Распечатать плакат</button>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="s4">
+<h2 id="s4">Тексты для карточек: Яндекс Карты, 2ГИС, Google</h2>
+<p class="lead">Адреса на сайте нет, поэтому в карточке указывается зона выезда, адрес не вводится. Если площадка требует адрес, выбирайте тип «выезд к клиенту» (в Яндексе и Google это зона обслуживания). Рубрики: дезинфекция, дезинсекция, дератизация, борьба с вредителями (точные рубрики выбираются в кабинете каждой площадки).</p>
+<div class="grid"><div class="blk"><h3>Описание организации</h3><pre id="c1">Выездной дезинфектор в Санкт-Петербурге и Ленинградской области. Уничтожаю клопов, тараканов, муравьёв и ос, крыс и мышей, удаляю плесень и неприятные запахи, обрабатываю дачные участки от клещей, комаров и борщевика, провожу уборку после пожара и потопа. Сначала осматриваю и объясняю, чем и как буду обрабатывать, потом работаю. Работаю по договору, оплата наличными или безналичная. Скидка 15% пенсионерам, инвалидам и многодетным семьям. Сайт: pcheladez.ru</pre><button class="cp" type="button" data-t="c1">Скопировать</button></div><div class="blk"><h3>Перечень услуг</h3><pre id="c2">— Уничтожение клопов и тараканов (квартиры, дома, коммуналки)
+— Уничтожение муравьёв и ос
+— Дератизация: крысы и мыши
+— Удаление плесени, антисептик, озонация
+— Обработка помещения от неприятных запахов
+— Обработка участков: клещи, комары, борщевик
+— Уборка после пожара, потопа и других происшествий
+— Осмотр помещения перед обработкой</pre><button class="cp" type="button" data-t="c2">Скопировать</button></div><div class="blk"><h3>Зона выезда</h3><pre id="c3">Зона выезда: Санкт-Петербург и Ленинградская область. Приезжаю на объект: квартиры, дома, коммерческие помещения, дачи.</pre><button class="cp" type="button" data-t="c3">Скопировать</button></div><div class="blk"><h3>Контакты</h3><pre id="c4">Телефон: +7 967 358-94-93
+Telegram: @pchela3636
+Сайт: https://pcheladez.ru/</pre><button class="cp" type="button" data-t="c4">Скопировать</button></div></div>
+</section>
+</main>
+<script>
+document.querySelectorAll('.cp[data-t]').forEach(function(b){b.addEventListener('click',function(){
+  var el=document.getElementById(b.dataset.t),t=el.textContent.trim(),o=b.textContent;
+  function done(){b.textContent='Скопировано';b.classList.add('ok');setTimeout(function(){b.textContent=o;b.classList.remove('ok')},1800)}
+  function fb(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){}}
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,fb)}else fb();
+})});
+document.getElementById('pr').addEventListener('click',function(){window.print()});
+</script>
+</body>
+</html>
